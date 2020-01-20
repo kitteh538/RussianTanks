@@ -7,14 +7,19 @@
     <title>Tanks Survey</title>
   </head>
   <style>
+     
     .input {
       border-style: solid;
       border-width: 1px 1px 1px 1px;
       border-color: rgba(0, 255, 170, 0.705);
     }
-    #flex {
-      display: flex;
-      flex-direction: column;
+    * {border-collapse: collapse;
+        font-family: sans-serif;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      border-style: solid;
     }
     #td {
       font-weight: 100;
@@ -24,7 +29,10 @@
       text-align: left;
       font-size: 14px;
     }
-    * {
+    tr,
+    td,
+    table {
+      border-collapse: collapse;
       font-family: sans-serif;
       padding: 5px;
       padding-left: 10px;
@@ -74,86 +82,93 @@
     }
   </style>
   <body>
-    <div id="flex"><h1>Tanks</h1></div>
-    <div id="flex">
-      <h3>
-        <span><strong>T-34 vs. KV-1 </strong></span>
-      </h3>
-    </div>
-    <div id="flex">
-      <table style="width :25%;">
-        <thead>
-          <tr>
-            <th></th>
-            <th class="close"><strong> T-34</strong></th>
-            <th class="cv"><strong> KV-1</strong></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="l"><strong>Armour</strong></td>
-            <td class="r" id="td">2.36 inches</td>
-            <td class="c" id="td">2.95276 inches</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Top Speed</strong></td>
-            <td class="r" id="td">32 mph</td>
-            <td class="c" id="td">25 mph</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Type</strong></td>
-            <td class="r" id="td">Medium</td>
-            <td class="c" id="td">Heavy</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Crew</strong></td>
-            <td class="r" id="td">4</td>
-            <td class="c" id="td">5</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Tank Gun</strong></td>
-            <td class="r" id="td">3 inches</td>
-            <td class="c" id="td">3 inches</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Weight</strong></td>
-            <td class="r" id="td">26 tons</td>
-            <td class="c" id="td">100 tons</td>
-          </tr>
-          <tr>
-            <td class="l"><strong>Engine</strong></td>
-            <td class="r" id="td">
-              Model V-2-34 38.8 L V12 Diesel engine of 500 hp
-            </td>
-            <td class="c" id="td">
-              600 hp V-2K
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="flex">
-      <h4>T-34</h4>
-      <img src="Char_T-34.jpg" alt="T-34" />
-    </div>
-    <div id="flex">
-      <h4>KV-1</h4>
-      <img src="h.jpg" alt="KV-1" />
-    </div>
-    <div id="flex">
-      <h2>Survey</h2>
-      <p>Which one do you like more?</p>
-      <div class="input">
-        <input type="radio" name="gender" value="KV-1" /> KV-1
+      <p>I am going crazy over this and I cant finish it so I will stop here</p>
+      <a href="
+      https://az538.github.io/RussianTanks/">Original</a>
+    <div id="grid">
+      <div>
+        <h1>Tanks</h1>
+
+        <h3>
+          <span><strong>T-34 vs. KV-1 </strong></span>
+        </h3>
       </div>
-      <div class="input">
-        <input type="radio" name="gender" value="T-34" /> T-34
+      <div id="grid">
+        <h1>Information</h1>
+        <table style="width :25%;">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="close"><strong> T-34</strong></th>
+              <th class="cv"><strong> KV-1</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="l"><strong>Armour</strong></td>
+              <td class="r" id="td">2.36 inches</td>
+              <td class="c" id="td">2.95276 inches</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Top Speed</strong></td>
+              <td class="r" id="td">32 mph</td>
+              <td class="c" id="td">25 mph</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Type</strong></td>
+              <td class="r" id="td">Medium</td>
+              <td class="c" id="td">Heavy</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Crew</strong></td>
+              <td class="r" id="td">4</td>
+              <td class="c" id="td">5</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Tank Gun</strong></td>
+              <td class="r" id="td">3 inches</td>
+              <td class="c" id="td">3 inches</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Weight</strong></td>
+              <td class="r" id="td">26 tons</td>
+              <td class="c" id="td">100 tons</td>
+            </tr>
+            <tr>
+              <td class="l"><strong>Engine</strong></td>
+              <td class="r" id="td">
+                Model V-2-34 38.8 L V12 Diesel engine of 500 hp
+              </td>
+              <td class="c" id="td">
+                600 hp V-2K
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <input type="submit" value="Submit" class="input" />
-    </div>
-    <div id="flex">
-      <footer><h3>Credits</h3></footer>
-      <p>Wikipedia and W3 Schools</p>
+      <div>
+        <h4>T-34</h4>
+        <img src="Char_T-34.jpg" alt="T-34" />
+      </div>
+      <div>
+        <h4>KV-1</h4>
+        <img src="h.jpg" alt="KV-1" />
+      </div>
+      <div id="grid"><div id="grid">
+        <h2>Survey</h2>
+        <p>Which one do you like more?</p>
+        <div class="input">
+          <input type="radio" name="gender" value="KV-1" /> KV-1
+        </div>
+        <div class="input">
+          <input type="radio" name="gender" value="T-34" /> T-34
+        </div>
+        <input type="submit" value="Submit" class="input" />
+      </div>
+      <div id="grid">
+        <footer><h3>Credits</h3></footer>
+        <p>Wikipedia and W3 Schools</p>
+      </div>
     </div>
   </body>
 </html>
